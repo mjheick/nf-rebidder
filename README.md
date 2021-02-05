@@ -16,6 +16,10 @@ Install php, then configure the variables:
 
 "login_name" and "login_password": Your credentials to sign into Niteflirt.
 
+"highbid": When bidding for any other place > 1 there are two strategies;
+- highbid=true, where we take the better positioned listings price, subtract a penny, and bid that.
+- highbid=false, where we take the requested listings place price, add a penny, and bid that.
+
 "debug": Provides insight into what the program is doing every time. If you don't want noise, set to false.
 
 Once you've configured up things, execute:
