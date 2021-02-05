@@ -113,7 +113,7 @@ if ($config["debug"])
 }
 
 /* If we are currently in our position or in a better position, we're good. */
-if ($my_position <= $config["position"])
+if (($my_position > 0) && ($my_position <= $config["position"]))
 {
 	if ($config["debug"])
 	{
